@@ -10,6 +10,7 @@ jobs:
       GH_TOKEN: ${{ secrets.PRACTICE_ACTIONS_SECRET }}
       NPM_TOKEN: ${{ secrets.NPM_PRACTICE_TOKEN }}
     steps:
+      - uses: actions/checkout@v2
       - name: Build my exercise
         run: yarn build
       - name: Release to NPM
