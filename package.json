@@ -1,0 +1,20 @@
+{
+  "name": "practice-github-actions",
+  "version": "1.0.0",
+  "description": "Test ahead of patternfly face to face",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bash build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolethoen/practice-github-actions.git"
+  },
+  "author": "Nicole Thoen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolethoen/practice-github-actions/issues"
+  },
+  "homepage": "https://github.com/nicolethoen/practice-github-actions#readme"
+}
