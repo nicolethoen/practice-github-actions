@@ -9,8 +9,9 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.PRACTICE_ACTIONS_SECRET }}
       NPM_TOKEN: ${{ secrets.NPM_PRACTICE_TOKEN }}
-      steps:
-        - run: yarn build
-          name: Build my exercise
-        - run: npx semantic-release@17.4.3
-          name: Release to NPM
+    steps:
+      - name: Build my exercise
+        run: yarn build
+      - name: Release to NPM
+        run: npx semantic-release@17.4.3
+
