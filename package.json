@@ -4,7 +4,7 @@
   "description": "Test ahead of patternfly face to face",
   "main": "index.js",
   "scripts": {
-    "build": "bash build.sh"
+    "build": "mkdir -p dist && cp index.js dist"
   },
   "repository": {
     "type": "git",

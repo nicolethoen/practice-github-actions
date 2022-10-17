@@ -14,5 +14,5 @@ jobs:
       - name: Build my exercise
         run: yarn build
       - name: Release to NPM
-        run: npx semantic-release@17.4.3
+        run: npx semantic-release@19.0.5
 
