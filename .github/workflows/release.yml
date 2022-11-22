@@ -7,7 +7,7 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.PRACTICE_ACTIONS_SECRET }}
+      GH_TOKEN: ${{ secrets.GH_PRACTICE_TOKEN }}
       NPM_TOKEN: ${{ secrets.NPM_PRACTICE_TOKEN }}
     steps:
       - uses: actions/checkout@v2
