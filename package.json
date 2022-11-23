@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/nicolethoen/practice-github-actions/issues"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "prerelease"
+  },
   "homepage": "https://github.com/nicolethoen/practice-github-actions#readme"
 }
