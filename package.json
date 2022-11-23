@@ -10,9 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/nicolethoen/practice-github-actions.git"
   },
-  "release": {
-    "branches": "main"
-  },
   "author": "Nicole Thoen",
   "license": "ISC",
   "bugs": {
