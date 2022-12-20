@@ -2,15 +2,16 @@ module.exports = {
   branches: [
     'main',
     { name: 'main', channel: 'prerelease' },
-    { name: 'v2', range: '2.0.x', channel: 'alpha', prerelease: true}
+    { name: 'v2', channel: 'alpha', prerelease: 'alpha'}
   ],
   analyzeCommits: {
     preset: 'angular'
   },
   plugins: [
     '@semantic-release/commit-analyzer',
-    '@semantic-release/github',
-    '@semantic-release/npm'
+    '@semantic-release/release-notes-generator',
+    '@semantic-release/npm',
+    '@semantic-release/github'
   ],
   tagFormat: 'prerelease-v${version}'
 };
