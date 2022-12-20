@@ -1,3 +1,3 @@
 export function breakingChange() {
-  console.log("test another success, hopefully!");
+  console.log("test success!");
 }
