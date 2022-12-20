@@ -5,6 +5,7 @@ on:
       - main
       - v2
       - v3
+      - v4
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
