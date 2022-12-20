@@ -3,8 +3,7 @@ on:
   push:
     branches:
       - main
-      - v2
-      - v3
+      - v3-old
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
