@@ -2,10 +2,7 @@ name: release
 on:
   push:
     branches:
-      - main
-      - v2
-      - v3
-      - v4
+      - v5
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
