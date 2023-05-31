@@ -2,7 +2,7 @@ module.exports = {
   branches: [
     'main',
     { name: 'v4', channel: 'prerelease', range: '4.x' },
-    { name: 'main', channel: 'alpha', prerelease: 'alpha', range: '5.x' }
+    { name: 'main', channel: 'alpha', prerelease: 'alpha'}
   ],
   analyzeCommits: {
     preset: 'angular'
