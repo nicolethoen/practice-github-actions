@@ -10,6 +10,7 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.GH_PRACTICE_TOKEN_MAY_23 }}
       NPM_TOKEN: ${{ secrets.NPM_PRACTICE_TOKEN_MAY_23 }}
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_PRACTICE_TOKEN_MAY_23 }}
     steps:
       - uses: actions/checkout@v2
       - name: Build for promotion
@@ -20,5 +21,6 @@ jobs:
           echo "Tag name from github.ref_name: ${{  github.ref_name }}"
       - name: Manual publish
         run: |
-          npm version $GITHUB_REF_NAME
-          npm publish --tag latest
+          npm version ${{ github.ref_name }} --git-tag-version false
+          npm publish --tag latest --dry-run
+        
