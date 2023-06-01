@@ -1,0 +1,18 @@
+on:
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - main
+    # Sequence of patterns matched against refs/tags
+    tags:        
+      - v5.*
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GH_PRACTICE_TOKEN_MAY_23 }}
+      NPM_TOKEN: ${{ secrets.NPM_PRACTICE_TOKEN_MAY_23 }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build for promotion
+        run: yarn build
