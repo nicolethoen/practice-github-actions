@@ -4,7 +4,8 @@
   "description": "Test ahead of patternfly face to face   ",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir -p dist && cp index.js dist"
+    "build": "mkdir -p dist && cp index.js dist",
+    "postinstall": "node postinstall.js"
   },
   "repository": {
     "type": "git",
