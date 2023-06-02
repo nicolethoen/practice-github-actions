@@ -1,7 +1,7 @@
 {
   "name": "practice-github-actions",
   "version": "1.0.0",
-  "description": "Test ahead of patternfly face to face ",
+  "description": "Test ahead of patternfly face to face  ",
   "main": "index.js",
   "scripts": {
     "build": "mkdir -p dist && cp index.js dist"
