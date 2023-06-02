@@ -23,7 +23,5 @@ jobs:
         run: |
           echo "Tag name from GITHUB_REF_NAME: $GITHUB_REF_NAME"
           echo "Tag name from github.ref_name: ${{  github.ref_name }}"
-      - name: Manual publish
-        run: |
-          npm version ${{ github.ref_name }} --git-tag-version false
-          npm publish --tag=latest
+      - name: Release to NPM
+        run: npx semantic-release@19.0.5 --branches main --tagFormat v${version} --tag ${{ github.ref_name }} --dry-run
