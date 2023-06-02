@@ -1,6 +1,6 @@
 module.exports = {
   branches: [
-    'release',
+    'do-not-delete',
     { name: 'v4', channel: 'prerelease-v4', range: '4.x' },
     { name: 'main', channel: 'prerelease', prerelease: 'prerelease' }
   ],
