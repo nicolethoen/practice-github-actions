@@ -1,3 +1,3 @@
 export function breakingChanges() {
-  console.log("test bug fix!!");
+  console.log("test bug fix!");
 }
