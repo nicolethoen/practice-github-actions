@@ -14,8 +14,8 @@ module.exports = {
       {
         "preset": "angular",
         "releaseRules": [
-          { type: "feat", release: "patch" },
-          { type: "fix", release: "patch" }
+          { type: "feat", release: "prerelease" },
+          { type: "fix", release: "prerelease" }
         ]
       }
     ],
