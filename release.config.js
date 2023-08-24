@@ -3,7 +3,7 @@ module.exports = {
     'do-not-delete',
     { name: 'v4', channel: 'prerelease-v4', range: '4.x' },
     { name: 'main', channel: 'prerelease', prerelease: 'prerelease' },
-    { name: '5.4.1', channel: 'prerelease-bugfix', prerelease: 'prerelease' }
+    { name: '5.4.1', channel: 'prerelease-bugfix', prerelease: 'prepatch' }
   ],
   analyzeCommits: {
     preset: 'angular'
